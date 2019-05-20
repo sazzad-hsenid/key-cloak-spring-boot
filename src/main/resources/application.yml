@@ -1,0 +1,11 @@
+keycloak:
+  auth-server-url: http://localhost:8081/auth
+  realm : sample-application-1
+  resource: client-1
+  public-client: true
+  security-constraints[0]:
+    authRoles[0] : user
+    securityCollections[0] :
+      patterns[0] : /customer/*
+server:
+  port: 8082
