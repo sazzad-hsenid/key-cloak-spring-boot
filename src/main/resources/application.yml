@@ -3,9 +3,6 @@ keycloak:
   realm : sample-application-1
   resource: client-1
   public-client: true
-  security-constraints[0]:
-    authRoles[0] : user
-    securityCollections[0] :
-      patterns[0] : /customer/*
+  principal-attribute: preferred_username
 server:
   port: 8082
