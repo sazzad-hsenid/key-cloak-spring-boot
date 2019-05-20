@@ -29,6 +29,11 @@ class HomeController {
         return "customer"
     }
 
+    @RequestMapping(path = ["/customer/ok"])
+    fun customersOk(model: Model): String {
+        return "customer"
+    }
+
     @GetMapping(path = ["/logout"])
     @Throws(ServletException::class)
     fun logout(request: HttpServletRequest): String {
