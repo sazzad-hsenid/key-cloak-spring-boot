@@ -32,3 +32,5 @@ curl -X GET \
 
 ```
 
+### KeyCloak server setup with docker
+`sudo docker run -p 8081:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin jboss/keycloak`
